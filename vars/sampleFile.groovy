@@ -1,3 +1,3 @@
-def testlib() {
+def call() {
   sh 'echo sample message...'
 }
