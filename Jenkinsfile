@@ -1,12 +1,10 @@
+@library('shared-library') _
 pipeline {
-    agent {
-        docker {image 'node:16-alpine'}
-    }
-
+    agent any
     stages {
-        stage('Verify_Docker') {
+        stage('Stage1') {
             steps {
-                sh 'node --version'
+                sampleFile()
             }
         }
     }
